@@ -1,1 +1,27 @@
-# TIL
+# **박수용**
+박수용의 TIL 뿌슝빠슝
+
+- 2021년 8월 9일 : [stackoverflow developer survey](./etc/2021_stackoverflow_developer_survey.md)
+- 2021년 8월 10일 : [spring cloud data flow summary](./spring_cloud_data_flow/summary.md)
+- 2021년 8월 11일 : [gradle dependency configuration](./spring/gradle_dependency_configuration.md)
+- 2021년 8월 12일 : [spring cloud data flow install](./spring_cloud_data_flow/scdf_install.md)
+- 2021년 8월 13일 : 오후 반차
+- 2021년 8월 17일 : [spring cloud stream example](./spring_cloud_data_flow/simple_stream_example.md)
+- 2021년 8월 18일 : [white domain](./etc/white_domain.md)
+- 2021년 8월 19일 : [spring boot mail test](./spring/spring_mail_test.md)
+- 2021년 8월 20일 : [white domain spf](./etc/white_domain_SPF.md)
+- 2021년 8월 23일 : [msa transaction](./msa/msa_transaction.md)
+- 2021년 8월 24일 : [gitops with k8s](./DevOps/GitOps_with_k8s.md)
+- 2021년 8월 25일 : [k8s init container](./k8s/init_container.md)
+- 2021년 8월 26일 : [argocd simple example](./DevOps/argocd_simple_example.md)
+- 2021년 8월 28일 : [argocd workflow](./DevOps/argocd_workflow.md)
+- 2021년 8월 30일 : [spring OAuth Enable](./spring/spring_OAuth_enable.md)
+- 2021년 8월 31일 : [k8s init container 2](./k8s/init_container2.md)
+- 2021년 9월 1일  : [azure key vault with spring boot](./cloud_provider/azure_key_vault_with_java.md)
+- 2021년 9월 2일  : [spring Security PasswordEncoder](./spring/passwordEncoder.md)
+- 2021년 9월 5일  : [pv and pvc](./k8s/pv_pvc.md)
+- 2021년 9월 6일  : [intellij short chut](./etc/intellij_shortcut.md)
+- 2021년 9월 7일  : [Bridge Desigh Pattern](./design_pattern/bridge_pattern.md)
+- 2021년 9월 8일  : [Chain of Responsibility Pattern](./design_pattern/Chain_of_responsibility.md)
+- 2021년 9월 9일  : [Observer Pattern](./design_pattern/observer_pattern.md)
+- 2021년 9월 10일 : [helm chart](./k8s/helm.md)
