@@ -25,4 +25,4 @@ final String outputDir = scratchDir.getAbsolutePath();
 final String outputDir = ctxt.options.scratchDir.absolutePath;
 ```
 
-자료 구조는 무조건 함수없이 공개 변수만 포함하고 객체는 비공개 변수와 공개함수를 포함해야 한다. 그러나 단순한 자료구조임에도 조회함수와 설정함수를 포함하라고 요구하는 프레임워크다 있다(Bean).
+자료 구조는 무조건 함수없이 공개 변수만 포함하고 객체는 비공개 변수와 공개함수를 포함해야 한다. 그러나 단순한 자료구조임에도 조회함수와 설정함수를 포함하라고 요구하는 프레임워크 있다(Bean).
