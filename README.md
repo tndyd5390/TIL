@@ -54,6 +54,7 @@
 ### 만들면서 배우는 클린 아키텍쳐
 [계층형 아키텍쳐의 문제](example_for_clean_architecture/1.%20계층형%20아키텍쳐의%20문제.md)  
 [의존성 역전하기](example_for_clean_architecture/2.%20의존성%20역전하기.md)  
+[코드 구성하기](example_for_clean_architecture/3.%20코드%20구성하기.md)  
   
 ### design pattern  
 [Bridge Desigh Pattern](./design_pattern/bridge_pattern.md)  
