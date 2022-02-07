@@ -14,6 +14,7 @@
 [spring cloud](#spring-cloud)  
 [test code](#test-code)  
 [etc](#etc)  
+[만들면서 배우는 클린아키텍처](#만들면서-배우는-클린-아키텍쳐)
   
 ### clean architecture  
 [design and architecture](./clean_architecture/design_and_architecture.md)  
@@ -49,6 +50,10 @@
 [인수 목록](clean_code/method/argument_list.md)  
 [함수의 사이드 이펙트](clean_code/method/side_effect.md)  
 [명령과 조회를 분리하라](clean_code/method/separate_command_query.md)  
+
+### 만들면서 배우는 클린 아키텍쳐
+[계층형 아키텍쳐의 문제](example_for_clean_architecture/1.%20계층형%20아키텍쳐의%20문제.md)
+[의존성 역전하기](example_for_clean_architecture/2.%20의존성%20역전하기.md)
   
 ### design pattern  
 [Bridge Desigh Pattern](./design_pattern/bridge_pattern.md)  
