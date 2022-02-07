@@ -68,6 +68,8 @@
   
 ### effective java  
 [2-5 자원을 명시하지 말고 의존성 주입을 사용하라](effective%20java/2-5자원을%20명시하지%20말고%20의존%20객체%20주입을%20사용.md)  
+[2-6 불필요한 객체 생성을 피하라](effective%20java/2-6%20불필요한%20객체%20생성을%20피하라.md)
+[2-7 다 쓴 객체 참조를 해제하라](effective%20java/2-7%20다%20쓴%20객체%20참조를%20해제하라.md)
   
 ### k8s  
 [k8s init container](./k8s/init_container.md)  
