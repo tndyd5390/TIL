@@ -77,7 +77,7 @@
 [6. 불필요한 객체 생성을 피하라](effective%20java/6.%20불필요한%20객체%20생성을%20피하라.md)  
 [7. 다 쓴 객체 참조를 해제하라](effective%20java/7.%20다%20쓴%20객체%20참조를%20해제하라.md)  
 [9. try-finally 보다는 try-with-resources를 사용하라](effective%20java/9.%20try-finally보다%20try-with-resources를%20사용.md)  
-[10. equals의 동치관계](effective%20java/10-1.%20equals의%20동치관계.md)  
+[10-1. equals의 동치관계](effective%20java/10-1.%20equals의%20동치관계.md)  
   
 ### k8s  
 [k8s init container](./k8s/init_container.md)  
