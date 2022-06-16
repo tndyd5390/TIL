@@ -379,26 +379,42 @@ public class AuthenticationPrincipalConfig implements WebMvcConfigurer{
 <p>
 
 ```java
-@RestController
-@RequestMapping("/api/v1/auth")
-public class AuthController{
-    private final AuthService authService;
+public class AuthenticationPrincipalArgumentResolver implements HandlerMethodArgumentResolver {
 
-    public AuthController(AuthService authService){
-        this.authService = authService;
-    }
+	private final AuthService authService;
 
-    @PostMapping("/login/token")
-    public ResponseEntity<TokenResDto> loginToken(@RequestBody final TokenReqDto tokenReqDto){
-        return ResponseEntity.ok().body(authService.login(tokenReqDto));
-    }
+	public AuthenticationPrincipalArgumentResolver(final AuthService authService) {
+		this.authService = authService;
+	}
 
-    @GetMapping("/login/loginMember")
-    public ResponseEntity<LoginMember> loginMember(
-        @AuthenticationPrincipal LoginMember loginMember
-    ) {
-        return ResponseEntity.ok().body(loginMember);
-    }
+	@Override
+	public boolean supportsParameter(MethodParameter parameter) {
+		return parameter.hasParameterAnnotation(AuthenticationPrincipal.class);
+	}
+
+	@Override
+	public LoginMember resolveArgument(MethodParameter parameter,
+		ModelAndViewContainer mavContainer,
+		NativeWebRequest webRequest, WebDataBinderFactory binderFactory) {
+
+		final String accessToken = AuthorizationExtractor.extract(webRequest.getNativeRequest(
+			HttpServletRequest.class));
+
+		if (accessToken == null) {
+			return new LoginMember.Guest();
+		}
+
+		final LoginMember loginMember = authService.findMemberByToken(accessToken);
+
+		final RoleType permitRole = parameter.getParameterAnnotation(AuthenticationPrincipal.class)
+			.role();
+
+		if (!loginMember.hasRole(permitRole)) {
+			throw new AuthException(ErrorCode.UNAUTHORIZED_ERROR);
+		}
+
+		return loginMember;
+	}
 }
 ```
 
